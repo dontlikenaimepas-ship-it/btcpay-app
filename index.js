@@ -17,7 +17,7 @@ app.get('/pay', async (req, res) => {
       `${BTCPAY_URL}/api/v1/stores/${STORE_ID}/invoices`,
       {
         amount: amount,
-        currency: 'USD',
+        currency: 'CHF',
         checkout: { speedPolicy: 'HighSpeed' }
       },
       {
